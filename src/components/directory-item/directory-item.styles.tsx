@@ -24,6 +24,10 @@ export const Body = styled.div`
   opacity: 0.7;
   position: absolute;
 
+  @media screen and (max-width: 400px) {
+    padding: 0 16px;
+  }
+
   h2 {
     font-weight: bold;
     margin: 0 6px 0;

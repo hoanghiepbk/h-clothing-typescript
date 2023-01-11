@@ -22,7 +22,6 @@ const ProductCard: FC<ProductCardProps> = ({ product }) => {
   const { name, price, imageUrl } = product;
   const dispatch = useDispatch();
   const cartItems = useSelector(selectCartItems);
-  console.log('cartItems',cartItems)
 
   const addProductToCart = () => dispatch(addItemToCart(cartItems, product));
 
@@ -31,7 +30,7 @@ const ProductCard: FC<ProductCardProps> = ({ product }) => {
       <img src={imageUrl} alt={`${name}`} />
       <Footer>
         <Name>{name}</Name>
-        <Price>{price}</Price>
+        <Price>${price}</Price>
       </Footer>
       <Button
         buttonType={BUTTON_TYPE_CLASSES.inverted}

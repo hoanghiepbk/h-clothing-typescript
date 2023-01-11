@@ -15,6 +15,13 @@ export const NavigationContainer = styled.div`
   }
 `;
 
+export const UserEmail = styled.span`
+
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+`;
+
 export const LogoContainer = styled(Link)`
   height: 100%;
   width: 70px;

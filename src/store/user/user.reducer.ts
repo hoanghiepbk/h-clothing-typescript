@@ -26,6 +26,7 @@ const INITIAL_STATE: UserState = {
 
 export const userReducer = (state = INITIAL_STATE, action: AnyAction) => {
   if (signInSuccess.match(action)) {
+    alert('Login success !');
     return { ...state, currentUser: action.payload };
   }
 
